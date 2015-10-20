@@ -1,0 +1,21 @@
+#!/bin/bash
+# Counting the results of articles with the word sex in a http-reference to an article
+# Version 0.2
+# Author: Per Thykjaer Jensen, MA
+# (c) Per Thykjaer Jensen 06-02-2010 
+# Licence GNU/GPL2
+# Results is in the file ord.txt (make one if it's missing)
+# Depencencies: lynx
+
+echo "indtast soegeord"
+read ord
+echo "indtast url"
+read webpg
+
+# idea: dump article, filter by word, filter by http (headline reference) -c = count ;-)
+# e.g. lynx -dump www.stiften.dk | grep sex | grep http -c 
+
+# scrape data and send to screen
+echo "=== HTTP-referencer med ordet $ord: ==="
+lynx -dump $webpg | grep $ord | grep http -c
+echo "======================================="
