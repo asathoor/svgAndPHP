@@ -37,7 +37,12 @@ class manipulate {
 		$result =  $mysqli->query($query); // query executed via mysqli
 		$row = $result->fetch_array(); // array
 		
+<<<<<<< HEAD
+
+		/* LOOP OUT THE RESULT ... */		
+=======
 		
+>>>>>>> b91049dff61f29e137058e3838556c030e4df199
 		// remember to add <table></table> before and after your loop
 		while ($row = $result->fetch_assoc()) {
    			//var_dump($row);
@@ -47,7 +52,11 @@ class manipulate {
 		mysqli_close($mysqli); // connection closed
 	}
 	
+<<<<<<< HEAD
+	/* Draw the SVG */
+=======
 	/* will draw a svg per bar */
+>>>>>>> b91049dff61f29e137058e3838556c030e4df199
 	public function drawSquare($width, $height, $fill) {
 		?>
 			<svg  width="<?php echo $width; ?>" 
@@ -65,7 +74,11 @@ class manipulate {
 		
 	}
 	
+<<<<<<< HEAD
+	/* idea: will create one svg with all info in it */
+=======
 	/* will create one svg with all info in it */
+>>>>>>> b91049dff61f29e137058e3838556c030e4df199
 	public function drawImage(){
 		// connect to the database
 		// create the svg
@@ -103,6 +116,16 @@ $change = new manipulate();
 	</style>
 </head>
 <body>
+<<<<<<< HEAD
+		<h1 class="ny">Scale images via the database</h1>
+	
+		<table>
+			<tr>
+				<?php
+					/* here the function will echo td with scaled SVGs */
+					$sql = "SELECT `prod_price` FROM `products`";
+					$change->readTable($sql);
+=======
 		<h1 class="ny">Column Heights via the Database</h1>
 	
 		<table>
@@ -111,6 +134,7 @@ $change = new manipulate();
 					//$sql = "select item_price from orderitems limit 6";	
 					$sql = "SELECT `prod_price` FROM `products`";
 					$change->readTable($sql); 
+>>>>>>> b91049dff61f29e137058e3838556c030e4df199
 				?>
 			</tr>
 	
