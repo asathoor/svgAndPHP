@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Data Visualization Via SVG
 ==========================
 
@@ -79,23 +78,4 @@ echo "</table>";
 
 (... close connection stuff here ... )
 ~~~~
-=======
-SVG and the Database
-====================
 
-> Data visualization exercises.
-
-* State: experimental draft
-
-## Files
-
-* bar.php - developed during the svg intro lesson.
-* dd.dh
-* hattemand.php
-* hattemand.svg
-* simple2.php - used as a OOP sample in the intro lesson.
-* simple3.php
-* simple4.php - class creating svg bars in a table.
-* simple.php
-* simple.svg
->>>>>>> b91049dff61f29e137058e3838556c030e4df199
