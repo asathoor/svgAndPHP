@@ -35,7 +35,7 @@ class manipulate {
 		// query
 		//$this->sql = $query;
 		$result =  $mysqli->query($query); // query executed via mysqli
-		$row = $result->fetch_array(); // array
+		//$row = $result->fetch_array(); // array
 		
 		
 		// remember to add <table></table> before and after your loop
